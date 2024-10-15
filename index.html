@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QRCode</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <img src="img/logo.png" alt="">
+        </div>
+    </nav>
+
+    <main>
+        <div class="container d-flex">
+            <div class="left">
+            <h1>QR Generator</h1>
+            <h3>Make your own QR Code.</h3>
+            <form action="">
+                <label for="text">
+                <p>Paste your URL</p>
+                </label>
+                
+                <input type="text" name="text" id="text" value="Your-URL" placeholder="URL">
+            </form>
+        </div>
+
+<div class="code">            
+    <div class="qrcode">
+</div>
+<button class="download" title="Download Your QR Code" >Download</button>
+</div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
